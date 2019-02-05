@@ -1,0 +1,269 @@
+body {
+    font-family: "Century Gothic", Helvetica, comic sans-serif;
+    font-size: 18px;
+    color: #424242;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.container {
+    margin-top: 4%;
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+.rowFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+.rowFlex2 {
+    display: flex;
+    flex-direction: row;
+    height: 55%;
+}
+
+.columnFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftPart {
+    width: 40%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightPart {
+    margin-left: 5%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid white;
+    cursor: pointer;
+}
+
+.dotSelected {
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+#blue {
+    background-color: darkblue;
+}
+
+#red {
+    background-color: red;
+}
+
+#grey {
+    background-color: grey;
+}
+
+#silver {
+    background-color: silver;
+}
+
+.info {
+    font-size: 12px;
+    color: grey;
+    margin-top: 1%;
+}
+
+.colorName {
+    font-size: 14px;
+    margin-bottom: 3%;
+}
+
+.lineClose {
+    line-height: 0.4;
+}
+
+.pHeading {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.barContainer>span {
+    display: inline-block;
+}
+
+.progressbar {
+    border-radius: 13px;
+    background-color: #FEFBA3;
+    width: 90%;
+    display: inline-block;
+}
+
+.progressbar>#critics {
+    background-color: #F7F01B;
+    width: 0%;
+    height: 15px;
+    border-radius: 10px;
+}
+
+.progressbar>#performance {
+    background-color: #F7F01B;
+    width: 0%;
+    height: 15px;
+    border-radius: 10px;
+}
+
+.progressbar>#interior {
+    background-color: #F7F01B;
+    width: 90%;
+    height: 15px;
+    border-radius: 10px;
+}
+
+.progressbar>#safety {
+    background-color: #F7F01B;
+    width: 44%;
+    height: 15px;
+    border-radius: 10px;
+}
+
+.progressbar>#reliability {
+    background-color: #F7F01B;
+    width: 52%;
+    height: 15px;
+    border-radius: 10px;
+}
+
+.graph {
+    margin-top: 2%;
+    width: 60%;
+}
+
+.allRatings {
+    float: right;
+    margin-top: 8px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #1aa3ff;
+}
+
+.carsFlex {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 4px;
+}
+
+.carsFlex>div {
+    width: 120px;
+    height: 122px;
+    margin: 5px;
+    text-align: center;
+    border: solid #f2f2f2;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.logo {
+    max-width: 90%;
+    height: 82px;
+}
+
+.carName {
+    margin: 0;
+}
+
+.highlight {
+    font-size: 20px;
+    background-color: #1aa3ff;
+    margin: 0;
+    width: 101%;
+    height: 23%;
+    border-radius: 0px 0px 10px 10px;
+    border: none;
+    padding-top: 1px;
+}
+
+#logo {
+    display: inline-block;
+    position: relative;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+#logo .speedometer {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 20px solid #F7F01B;
+    border-right: 20px solid white;
+    border-bottom: 20px solid white;
+    -webkit-transform: rotate(45deg);
+    display: inline-block;
+}
+
+#logo .needle {
+    width: 5px;
+    height: 50px;
+    background: #999999;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    display: inline-block;
+    left: 57px;
+    position: absolute;
+    top: 10px;
+    -webkit-animation: move 4s;
+    transform: rotate(50deg);
+    transform-origin: bottom;
+}
+
+@-webkit-keyframes move {
+    0% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(50deg);
+    }
+}
+
+.score {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-left: 85px;
+}
+
+.total {
+    font-size: 22px;
+    font-weight: bold;
+    color: grey;
+    margin-left: 85px;
+}
+
+@media screen and (max-width: 1260px) {
+    .info {
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .pHeading {
+        font-size: 10px;
+    }
+
+    .total {
+        line-height: 1;
+    }
+}
